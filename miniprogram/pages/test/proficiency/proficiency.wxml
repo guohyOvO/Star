@@ -1,0 +1,33 @@
+<!--关闭默认样式之后的顶部栏-->
+<cu-custom bgColor="bg-green" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">能力测试</view>
+</cu-custom>
+
+<view class="card">
+  <view class="pj">当前第{{current}}题/共{{total}}题</view>
+
+  <progress class="prs" percent="{{percent}}" show-info stroke-width="15" border-radius='20' color="green" />
+
+  <view class="cu-bar hh">
+    <view class='action'>
+      <text class='cuIcon-titles text-green '></text>
+      <text class="pt">{{subject.title}}</text>
+    </view>
+  </view>
+  <view class="prd">
+    <radio-group bindchange="radioChange">
+      <view wx:for="{{subject.options}}" wx:key="index">
+        <radio class="pr" style="transform: scale(0.8);" value="{{item.code}}" checked="{{isSelect}}" />
+        <text class="pt">{{item.option}}</text>
+      </view>
+    </radio-group>
+  </view>
+
+  <view wx:if="{{isComplete}}">
+    <button bindtap="gotoPage" class="pb bg-red">查看结果</button>
+  </view>
+  <view wx:else>
+    <button bindtap="submit" class="pb bg-green">提交</button>
+  </view>
+</view>

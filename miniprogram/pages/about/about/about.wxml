@@ -1,0 +1,39 @@
+<!--pages/about/about/about.wxml-->
+<!--顶部栏-->
+<cu-custom bgColor="bg-gradual-green" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">关于我们</view>
+</cu-custom>
+
+
+
+<!-- 二维码区域 -->
+<view id="qrCodeView" class="margin-top-sm">
+  <image src="../../../images/me.png"></image>
+  <text>微信扫一扫关注我们</text>
+</view>
+ 
+<!-- 信息区域 -->
+<view id="companyView" class="margin-top-sm">
+  <view class="companyItemView">
+    <view>学校名称</view>
+    <view>湘潭大学</view>
+  </view>
+  <view class="companyItemView">
+    <view>学校地址</view>
+    <view>湖南省湘潭市雨湖区</view>
+  </view>
+  <view class="companyItemView">
+    <view>联系电话</view>
+    <view>13786255297</view>
+  </view>
+  <view class="companyItemView">
+    <view>客服邮箱</view>
+    <view>2549829740@qq.com</view>
+  </view>
+ 
+  <view class="companyItemView">
+    <view>学校简介</view>
+    <view>简称“湘大”，位于湖南省湘潭市，是毛泽东同志亲自倡办的国家“双一流”建设高校、综合性全国重点大学，是湖南省人民政府与教育部、与国家国防科技工业局共建高校。</view>
+  </view>
+</view>

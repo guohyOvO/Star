@@ -1,0 +1,39 @@
+<!--pages/about/set/set.wxml-->
+<!--顶部栏-->
+<cu-custom bgColor="bg-gradual-green" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">设置</view>
+</cu-custom>
+
+<scroll-view scroll-y class="scrollPage">
+  
+    <view  class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+    <view class="cu-item arrow" bindtap="logout">
+      <navigator class="content" hover-class="none">
+        <text class="cuIcon-phone text-orange"></text>
+        <text class="text-grey">绑定手机号</text>
+      </navigator>
+    </view>
+  </view>
+
+
+  <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+    <view class="cu-item arrow" bindtap="logout">
+      <navigator class="content" hover-class="none">
+        <text class="cuIcon-creativefill text-orange"></text>
+        <text class="text-grey">退出登录</text>
+      </navigator>
+    </view>
+  </view>
+
+  <view  class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+    <view class="cu-item arrow" bindtap="logout">
+      <navigator class="content" hover-class="none">
+        <text class="cuIcon-more text-blue"></text>
+        <text class="text-grey">更多</text>
+      </navigator>
+    </view>
+  </view>
+
+
+</scroll-view>

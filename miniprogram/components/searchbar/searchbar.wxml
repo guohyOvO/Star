@@ -1,0 +1,10 @@
+<!--搜索栏-->
+<view class="searchbar">
+  <view class="icontext " wx:if="{{enable}}">
+    <input placeholder="搜索职业" bindinput="getInput"></input>
+  </view>
+  <navigator class="icontext" wx:else>
+  <image class="cuIcon-search"></image>
+    <text>搜索</text>
+  </navigator>
+</view>

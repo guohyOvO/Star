@@ -1,0 +1,56 @@
+/* pages/test/personality/personality.wxss */
+page{
+  background-color:rgb(218, 225, 228) ;
+}
+
+.pr{
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.prs{
+  width: 90%;
+  margin-left: 8%;
+  margin-top: 5%;
+}
+
+.prd{
+  margin-left: 7%;
+}
+
+.pt{
+  margin-left: 5px;
+  font-size: 15px;
+  font-style: songti;
+}
+
+
+.pb{
+  width: 150px;
+  margin-top: 23%;
+}
+
+.pj{
+  color: rgb(3, 192, 51);
+  text-align: center;
+  margin-top: 25%;
+  font-size: 20px;
+}
+
+.hh{
+  margin-top: 18%;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.card {
+  width: 90%;
+  margin-top: 15%;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 1200rpx;
+  background: rgb(255, 255, 255) ;
+  border-radius: 30rpx;
+  box-shadow: 5px 5px 5px #a5aaaa;
+}

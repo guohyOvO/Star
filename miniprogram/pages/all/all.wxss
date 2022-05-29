@@ -1,0 +1,15 @@
+/* pages/all/all.wxss */
+.f {
+  font-size: 18px;
+  color: orange;
+  font-style: SimHei;
+}
+
+.top-text {
+  margin-left: 30%;
+}
+
+.image{
+  width: 600px;
+  height: 600px;
+}

@@ -1,0 +1,41 @@
+/* pages/about/about/about.wxss */
+/* 二维码区域样式 */
+#qrCodeView{
+    width: 300rpx;
+    margin: 20rpx auto 60rpx;
+    font-size: 26rpx;
+    text-align: center;
+  }
+   
+  #qrCodeView > image{
+    width: 300rpx;
+    height: 300rpx;
+    padding-bottom: 10rpx;
+  }
+   
+   
+  /* 公司信息区域 */
+  #companyView{
+    padding: 0 40rpx;
+  }
+   
+  .companyItemView{
+    padding-bottom: 30rpx;
+  }
+   
+  #companyView > image{
+    width: 670rpx;
+    height: 500rpx;
+    margin-bottom: 40rpx;
+  }
+   
+  .companyItemView > view:nth-child(1){
+    font-size: 30rpx;
+    color: #87cefa;
+    padding-bottom: 20rpx;
+  }
+   
+  .companyItemView > view:nth-child(2){
+    font-size: 26rpx;
+    color: #888;
+  }

@@ -1,0 +1,61 @@
+<!--顶部栏-->
+<cu-custom bgColor="bg-gradual-green" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">个人首页</view>
+</cu-custom>
+
+<!--登录信息获取-->
+<view>
+  <view class="bg-user">
+      <!-- class="cu-avatar round lg"-->
+      <!-- 授权前 -->
+      <block wx:if="{{!hasUserInfo}}">
+        <view bgColor="bg-gradual-green">
+          <button class="cu-btn round bg-button wz" bindtap="getUserProfile" >授权登录</button>
+        </view>
+      </block>
+      <!-- 授权后 -->
+      <block wx:else>
+        <view class="users">
+          <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+          <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        </view>
+      </block>
+  </view>
+</view>
+
+
+
+<view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+    <view class="cu-item arrow">
+      <navigator class="content"  url="/pages/about/result/result">
+        <text class="cuIcon-roundcheckfill text-grey"></text>
+        <text class="text-grey">结果查询</text>
+      </navigator>
+    </view>
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/about/about/about" hover-class="none">
+        <text class="cuIcon-friendfill text-orange"></text>
+        <text class="text-grey">关于我们</text>
+      </navigator>
+    </view>
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/about/set/set" hover-class="none">
+        <text class="cuIcon-settings text-green"></text>
+        <text class="text-grey">设置</text>
+      </navigator>
+    </view>
+   
+    <view class="cu-item arrow">
+      <button class="cu-btn content" open-type="feedback">
+        <text class="cuIcon-writefill text-cyan"></text>
+        <text class="text-grey">意见反馈</text>
+      </button>
+    </view>
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/about/test/list" hover-class="none">
+        <text class="cuIcon-newfill text-orange"></text>
+        <text class="text-grey">在线客服</text>
+      </navigator>
+    </view>
+  </view>

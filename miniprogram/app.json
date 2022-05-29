@@ -1,0 +1,53 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/mine/mine",
+        "pages/search/search",
+        "pages/article/paper1/paper1",
+        "pages/test/personality/personality",
+        "pages/test/proficiency/proficiency",
+        "pages/about/result/result",
+        "pages/about/set/set",
+        "pages/about/about/about",
+        "pages/result/character/character",
+        "pages/result/ability/ability",
+        "pages/result/result",
+        "pages/all/all",
+        "components/searchbar/searchbar",
+        "pages/jobSearch/jobSearch",
+        "pages/article/paper1/jobdetail/jobdetail"
+    ],
+    "window": {
+        "navigationStyle": "custom"
+    },
+    "sitemapLocation": "sitemap.json",
+    "usingComponents": {
+        "cu-custom": "/colorui/components/cu-custom"
+    },
+    "tabBar": {
+        "color": "#999",
+        "selectedColor": "#3D98FF",
+        "backgroundColor": "#fff",
+        "borderStyle": "white",
+        "list": [
+            {
+                "selectedIconPath": "images/shome.png",
+                "iconPath": "images/home.png",
+                "pagePath": "pages/index/index",
+                "text": "首页"
+            },
+            {
+                "selectedIconPath": "images/sdynamic.png",
+                "iconPath": "images/dynamic.png",
+                "pagePath": "pages/search/search",
+                "text": "查询"
+            },
+            {
+                "selectedIconPath": "images/sme.png",
+                "iconPath": "images/me.png",
+                "pagePath": "pages/mine/mine",
+                "text": "我的"
+            }
+        ]
+    }
+}

@@ -1,0 +1,13 @@
+<cu-custom bgColor="bg-gradual-green"  isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">学习路线</view>
+</cu-custom>
+
+//这个地方是那个职业学习的地儿就是放的那个图片这个界面
+<view class="cu-bar bg-white solid-bottom">
+  <view class="top-text">
+    <text class="f">Java后端工程师</text>
+  </view>
+</view>
+<image mode="widthFix" style="width: 700px;" src="../../images/javaback.png">
+</image>

@@ -1,0 +1,57 @@
+<!--头部导航-->
+<cu-custom bgColor="bg-gradual-green" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">查询</view>
+</cu-custom>
+
+<!--搜索框
+<view class="results">
+  <view class="item" wx:for="{{[1,2,3,4,5]}}" wx:key="*this">
+    <image class="cuIcon-search"></image>
+    <view class="info">
+      <view class="title">132</view>
+      <view class="year">dafasfas</view>
+    </view>
+  </view>
+</view>-->
+<view>
+<navigator url="../jobSearch/jobSearch">
+  <searchbar enable="{{true}}"></searchbar></navigator>
+</view>
+
+
+
+<!--<view wx:if="{{isShow}}"></view>-->
+<view class="VerticalBox">
+  <!--左边的竖列导航-->
+  <scroll-view class="VerticalNav nav" scroll-y scroll-with-animation scroll-top="{{VerticalNavTop}} ">
+    <view class="cu-item {{index==TabCur?'text-green cur':''}}" wx:for="{{list}}" wx:key="index" bindtap='tabSelect' data-id="{{index}}">
+      {{item.occupation}}
+    </view>
+  </scroll-view>
+  <!--每一个导航中的导航页-->
+  <scroll-view class="VerticalMain" scroll-y scroll-with-animation style="height:600px" scroll-into-view="main-{{MainCur}}" bindscroll="VerticalMain">
+    <view class="padding-top padding-lr" wx:for="{{list}}" wx:key="xxx" id="main-{{index}}">
+      <view class='cu-bar solid-bottom bg-white'>
+        <view class='action'>
+          <text class='cuIcon-title text-green'></text> {{item.occupation}}
+        </view>
+      </view>
+      <view class="cu-list menu-avatar">
+
+        <view wx:for="{{item.contains}}" wx:key="xxx">
+          <view class="cu-item">
+          <navigator url="../article/paper1/paper1">
+            <view class="ww">
+              <view class="wz"><text class='cuIcon-title text-black'></text>{{item.name}}</view>
+              <view class="text-gray text-sm flex">
+                <text class="text-cut text-grey  margin-right-xs">{{item.describe}}</text>
+              </view>
+            </view>
+          </navigator>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

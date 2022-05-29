@@ -1,0 +1,16 @@
+<!--总的结果界面查询-->
+<cu-custom bgColor="bg-gradual-green" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">职业方向推荐</view>
+</cu-custom>
+  <view class="text-center padding">
+  <text class="text-black text-bold  text-lg padding">职业推荐</text>
+  </view>
+
+<view wx:for="{{WorkList}}" wx:key="index" class="padding bg-white">
+  <view class="solid-bottom text-lg padding bg-gradual-blue">
+    <navigator url="{{item.url}}">
+    <text>{{item.name}}</text>
+  </navigator>
+      </view>
+</view>

@@ -1,0 +1,21 @@
+<!--pages/result/ability/ability.wxml-->
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">测试结果</view>
+</cu-custom>
+
+<view class="card">
+  <view class="top-text">
+    测试结果：
+    <text class="top-text1">逻辑类</text>
+  </view>
+  <view>
+    <image class="image" src="../../../images/logic.png"></image>
+  </view>
+  <view class="bottom-text">
+    逻辑思维是人脑的一种理性活动，思维主体把感性认识阶段获得的对于事物认识的信息材料抽象成概念，运用概念进行判断，并按一定逻辑关系进行推理，从而产生新的认识。逻辑思维具有规范、严密、确定和可重复的特点。
+ 对于逻辑思维力强的人群，一般思维能力比较强。可以考虑从事一些技能类的工作，如研发、精细类工程；也考虑做分析类的工作。如分析师、策划师、数据师等，可以从细节上严控数据的准确性与精准等。这个可以更深入的做到行业的顶峰与高层职位......
+
+  </view>
+  <button bindtap='gotoPage' class='bottom-b'>回到首页进行其他测试</button>
+</view>

@@ -1,0 +1,61 @@
+/**index.wxss**/
+
+.tower-swiper .tower-item {
+  transform: scale(calc(0.5 + var(--index) / 10));
+  margin-left: calc(var(--left) * 100rpx - 150rpx);
+  z-index: var(--index);
+}
+
+.hh {
+  margin-top: 5%;
+}
+
+.lianjie {
+  width: 100%;
+  /*给你的链接加入限定的宽，这里用%是因为希望它能等比例适应大小*/
+  height: 100%;
+  /*给链接加入高，这个高是图片的高加文字的高*/
+  margin-left: 0.2%;
+  /*希望链接屏幕的左边有点间隙*/
+}
+
+.wz{
+  text-align: center;
+}
+
+.flex-center {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.tiao{
+  width: 70%;
+  background-color: green;
+  margin-top: 5%;
+  height: 10rpx;
+}
+
+.f {
+  font-size: 13px;
+  font-style: SimHei;
+  font-weight:bold;
+}
+
+.tp {
+  width: 100%;
+  /*在被链接包围下，需要100%的宽度显示你的图片*/
+  height: 150px;
+  /*不要超过链接框的高度*/
+  margin-top: 2px;
+  /*让图片和链接框有点距离*/
+  border: 1px solid rgb(250, 250, 250);
+  /*图片外围加上边框，使图片们之间有点间隔*/
+  position: fixed;
+  z-index: 1;
+}
+
+.bg-item{
+  background-color: rgb(51, 122, 62);
+  color: var(--white);
+}

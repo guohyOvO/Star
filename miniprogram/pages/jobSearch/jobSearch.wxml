@@ -1,0 +1,27 @@
+<!--头部导航-->
+<cu-custom bgColor="bg-gradual-green"  isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">查询</view>
+</cu-custom>
+<!--搜索框
+<view class="results">
+  <view class="item" wx:for="{{[1,2,3,4,5]}}" wx:key="*this">
+    <image class="cuIcon-search"></image>
+    <view class="info">
+      <view class="title">132</view>
+      <view class="year">dafasfas</view>
+    </view>
+  </view>
+</view>-->
+<view>
+  <searchbar enable="{{true}}" bindonfetch="onSearch"></searchbar>
+</view>
+<view class="results">
+  <view class="item" wx:for="{{res}}" wx:key="*this">
+    <image class="cuIcon-search"></image>
+    <view class="info">
+      <view class="title">{{item.name}}</view>
+      <view class="year">{{item.describe}}</view>
+    </view>
+  </view>
+</view>

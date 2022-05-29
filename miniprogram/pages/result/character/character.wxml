@@ -1,0 +1,20 @@
+<cu-custom bgColor="bg-gradual-orange" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">测试结果</view>
+</cu-custom>
+
+<view class="card">
+  <view class="top-text">
+    测试结果：
+    <text class="top-text1">社会型</text>
+  </view>
+  <view>
+    <image class="image" src="../../../images/outgoing.png"></image>
+  </view>
+  <view class="bottom-text">
+    喜欢与人交往、不断结交新的朋友、善言谈、愿意教导别人。关心社会问题、渴望发挥自己的社会作用。寻求广泛的人际关系，比较看重社会义务和社会道德。
+    社会型人格通常是交际者，比较擅长于语言，如果对应到 个人优势能力测评中，很可能其语言天赋是比较突出的，其次就是社会型的人对于实现自我价值的方式，主要集中在帮助他人，以助人为乐，比如帮助他人解决问题，教会别人什么东西等等.....
+    在大学报考专业时，社会型人格的人更加适合与教育相关的专业，比如特殊教育，学前教育，小学教育。当然也可以选择一些在未来职业发展规划上面比较远大明确的专业，比如社会学，传播学，新闻学。由于性格的影响，他们还可以选择公共关系、社会保障学、劳动关系学等专业。
+  </view>
+  <button bindtap='gotoPage' class='bottom-b'>回到首页进行其他测试</button>
+</view>

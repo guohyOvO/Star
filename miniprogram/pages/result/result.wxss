@@ -1,0 +1,6 @@
+/* pages/result/result.wxss */
+.bsize{
+  height: 20px;
+  width: 80px;
+  
+}

@@ -1,0 +1,97 @@
+page{
+  background-color: white;
+}
+.ww{
+  background-color: rgb(226, 231, 245);
+}
+
+.bg-button{
+  background-color:rgb(51, 122, 62);
+  color: var(--white);
+}
+
+.wz{
+    margin-left: 3%;
+}
+
+.VerticalNav.nav {
+  width: 300rpx;
+  white-space: initial;
+  height: 580px;
+}
+
+.VerticalNav.nav .cu-item {
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  margin: 0;
+  border: none;
+  height: 50px;
+  position: relative;
+}
+
+.VerticalNav.nav .cu-item.cur {
+  background-color: #f1f1f1;
+}
+.VerticalNav.nav .cu-item.cur::after {
+  content: "";
+  width: 8rpx;
+  height: 30rpx;
+  border-radius: 10rpx 0 0 10rpx;
+  position: absolute;
+  background-color: currentColor;
+  top: 0;
+  right: 0rpx;
+  bottom: 0;
+  margin: auto;
+}
+.VerticalBox{
+  display: flex;
+}
+.VerticalMain{
+  background-color: #f1f1f1;
+}
+
+.ps{
+  width: 50px;
+  height: 25px;
+  font-size: 10px;
+  margin-right: 10px;
+}
+
+/*results*/
+.results{
+  padding: 20rpx;
+}
+
+.item{
+  padding: 10rpx 0; 
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-items: flex-start;
+}
+
+.item > image{
+  height: 100rpx;
+  width: 75rpx;
+  margin-right: 20rpx;
+}
+
+.item>.info{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info>.title{
+  font-size: 32rpx;
+  color:#444;
+  font-weight: 500;
+}
+
+.info>.year{
+  font-size: 20rpx;
+  color:#aaa;
+
+}
